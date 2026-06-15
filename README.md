@@ -1,4 +1,4 @@
-# 📈 AI Financial Research Agent
+# AI Financial Research Agent
 
 A conversational AI agent for real-time Indian stock market research, powered by **Groq (Llama 3.3 70B)** with tool-calling, **yfinance** for live market data, and an interactive **Streamlit** UI with **Plotly** charts.
 
@@ -6,7 +6,7 @@ A conversational AI agent for real-time Indian stock market research, powered by
 
 ---
 
-## ✨ Features
+## Features
 
 - **Conversational stock research** — ask natural-language questions like *"What is Reliance's current stock price?"* or *"Compare TCS and Infosys"*
 - **Tool-calling agent** — Llama 3.3 70B decides when to fetch live price data, historical data, or company fundamentals via function calling
@@ -17,15 +17,15 @@ A conversational AI agent for real-time Indian stock market research, powered by
 
 ---
 
-## 🖼️ Demo
+## Screenshots
 
 | Chat Interface | Stock Chart |
 |---|---|
-| ![Chat demo](docs/chat_demo.png) | ![Chart demo](docs/chart_demo.png) |
+| ![Chat demo](pics/chat_interface.png) | ![Chart demo](pics/stock_chart.png) |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **LLM:** Groq API — Llama 3.3 70B Versatile (function/tool calling)
 - **Frontend:** Streamlit
@@ -35,7 +35,7 @@ A conversational AI agent for real-time Indian stock market research, powered by
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -53,7 +53,7 @@ A conversational AI agent for real-time Indian stock market research, powered by
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. User asks a question in the chat (e.g., *"How is HDFC Bank performing?"*)
 2. The query is sent to **Llama 3.3 70B** via Groq, along with a system prompt and a set of available tools
@@ -66,7 +66,7 @@ A conversational AI agent for real-time Indian stock market research, powered by
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -92,7 +92,7 @@ streamlit run app.py
 
 ---
 
-## 💬 Example Queries
+## Example Queries
 
 - "What is Reliance's current stock price?"
 - "Compare TCS and Infosys"
@@ -102,15 +102,9 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Add support for portfolio tracking and watchlists
 - Multi-stock comparison charts
 - News sentiment integration for queried stocks
 - Support for additional time periods and technical indicators (RSI, moving averages)
-
----
-
-## 📄 License
-
-This project is for educational and personal portfolio purposes.
