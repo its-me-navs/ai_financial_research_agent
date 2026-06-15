@@ -30,6 +30,7 @@ def render_chart(ticker: str):
     """Render a Plotly line chart for the given ticker."""
     data = get_historical_data(ticker, "1mo")
     if "error" in data:
+        st.error(data["error"])
         return
     dates = [d["date"] for d in data["data"]]
     closes = [d["close"] for d in data["data"]]
@@ -83,6 +84,7 @@ def handle_response(prompt):
         st.markdown(response)
         # Auto-render chart if stock is mentioned
         ticker = detect_ticker(prompt)
+        st.write(f"DEBUG: detected ticker = {ticker}")
         if ticker:
             render_chart(ticker)
     st.session_state.messages.append({"role": "assistant", "content": response})
